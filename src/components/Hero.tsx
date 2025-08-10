@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Github, Linkedin, Mail, Phone, Download, ExternalLink } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, Download, ExternalLink, Code, Instagram, Twitter } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -50,39 +50,77 @@ const Hero = () => {
           </div>
           
           {/* Contact Links */}
-          <Card className="max-w-md mx-auto p-6 card-gradient border-border/50">
-            <div className="flex justify-center gap-6">
+          <Card className="max-w-2xl mx-auto p-6 card-gradient border-border/50">
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
               <a 
                 href="mailto:mmdnayeem4705@gmail.com"
-                className="flex items-center gap-2 text-sm hover:text-primary transition-colors"
+                className="flex flex-col items-center gap-2 text-sm hover:text-primary transition-colors group"
               >
-                <Mail className="w-4 h-4" />
-                <span className="hidden sm:inline">Email</span>
+                <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                <span className="text-xs">Email</span>
               </a>
               <a 
                 href="tel:+917013827080"
-                className="flex items-center gap-2 text-sm hover:text-primary transition-colors"
+                className="flex flex-col items-center gap-2 text-sm hover:text-primary transition-colors group"
               >
-                <Phone className="w-4 h-4" />
-                <span className="hidden sm:inline">Call</span>
+                <Phone className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                <span className="text-xs">Call</span>
               </a>
               <a 
                 href="https://github.com/mmdnayeem4705"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm hover:text-primary transition-colors"
+                className="flex flex-col items-center gap-2 text-sm hover:text-primary transition-colors group"
               >
-                <Github className="w-4 h-4" />
-                <span className="hidden sm:inline">GitHub</span>
+                <Github className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                <span className="text-xs">GitHub</span>
               </a>
               <a 
-                href="https://linkedin.com/in/mmdnayeem4705"
+                href="https://www.linkedin.com/in/mulla-mohammed-nayeem-09b33a361/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm hover:text-primary transition-colors"
+                className="flex flex-col items-center gap-2 text-sm hover:text-primary transition-colors group"
               >
-                <Linkedin className="w-4 h-4" />
-                <span className="hidden sm:inline">LinkedIn</span>
+                <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                <span className="text-xs">LinkedIn</span>
+              </a>
+              <a 
+                href="https://leetcode.com/u/Mulla_Mohammed_Nayeem/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center gap-2 text-sm hover:text-primary transition-colors group"
+              >
+                <Code className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                <span className="text-xs">LeetCode</span>
+              </a>
+              <a 
+                href="https://www.hackerrank.com/profile/mmdnayeem4705"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center gap-2 text-sm hover:text-primary transition-colors group"
+              >
+                <Code className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                <span className="text-xs">HackerRank</span>
+              </a>
+            </div>
+            <div className="flex justify-center gap-6 mt-4 pt-4 border-t border-border/50">
+              <a 
+                href="https://www.instagram.com/m_md_nayeem/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm hover:text-primary transition-colors group"
+              >
+                <Instagram className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                <span className="text-xs">Instagram</span>
+              </a>
+              <a 
+                href="https://x.com/m_md_nayeem1314"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm hover:text-primary transition-colors group"
+              >
+                <Twitter className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                <span className="text-xs">Twitter</span>
               </a>
             </div>
           </Card>

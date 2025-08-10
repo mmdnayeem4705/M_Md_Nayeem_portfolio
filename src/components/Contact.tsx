@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, Github, Linkedin, MapPin, Download } from "lucide-react";
+import { Mail, Phone, Github, Linkedin, MapPin, Download, Code, Instagram, Twitter } from "lucide-react";
 
 const Contact = () => {
   const contactMethods = [
@@ -29,8 +29,36 @@ const Contact = () => {
       icon: <Linkedin className="w-5 h-5" />,
       label: "LinkedIn",
       value: "Connect with me",
-      href: "https://linkedin.com/in/mmdnayeem4705",
+      href: "https://www.linkedin.com/in/mulla-mohammed-nayeem-09b33a361/",
       color: "highlight"
+    },
+    {
+      icon: <Code className="w-5 h-5" />,
+      label: "LeetCode",
+      value: "Mulla_Mohammed_Nayeem",
+      href: "https://leetcode.com/u/Mulla_Mohammed_Nayeem/",
+      color: "primary"
+    },
+    {
+      icon: <Code className="w-5 h-5" />,
+      label: "HackerRank",
+      value: "mmdnayeem4705",
+      href: "https://www.hackerrank.com/profile/mmdnayeem4705",
+      color: "accent"
+    },
+    {
+      icon: <Instagram className="w-5 h-5" />,
+      label: "Instagram",
+      value: "@m_md_nayeem",
+      href: "https://www.instagram.com/m_md_nayeem/",
+      color: "highlight"
+    },
+    {
+      icon: <Twitter className="w-5 h-5" />,
+      label: "Twitter",
+      value: "@m_md_nayeem1314",
+      href: "https://x.com/m_md_nayeem1314",
+      color: "primary"
     }
   ];
 
@@ -46,8 +74,8 @@ const Contact = () => {
           </p>
         </div>
         
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {contactMethods.map((method, index) => (
               <Card 
                 key={method.label} 
