@@ -88,12 +88,26 @@ const Achievements = () => {
               and maintaining active participation in competitive programming challenges.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Badge variant="outline" className="border-primary/50 text-primary px-4 py-2">
-                HackerRank Profile
-              </Badge>
-              <Badge variant="outline" className="border-accent/50 text-accent px-4 py-2">
-                LeetCode Profile
-              </Badge>
+              <a 
+                href="https://www.hackerrank.com/mmdnayeem4705" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <Badge variant="outline" className="border-primary/50 text-primary px-4 py-2 hover:bg-primary/10 transition-colors cursor-pointer">
+                  HackerRank Profile
+                </Badge>
+              </a>
+              <a 
+                href="https://leetcode.com/mmdnayeem4705" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <Badge variant="outline" className="border-accent/50 text-accent px-4 py-2 hover:bg-accent/10 transition-colors cursor-pointer">
+                  LeetCode Profile
+                </Badge>
+              </a>
             </div>
           </Card>
         </div>
