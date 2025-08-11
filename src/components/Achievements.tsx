@@ -99,7 +99,7 @@ const Achievements = () => {
                 </Badge>
               </a>
               <a 
-                href="https://leetcode.com/mmdnayeem4705" 
+                href="https://leetcode.com/u/Mulla_Mohammed_Nayeem/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block"
