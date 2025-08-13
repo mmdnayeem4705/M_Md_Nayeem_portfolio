@@ -38,17 +38,15 @@ const ContactForm = () => {
     setIsSubmitting(true);
     
     try {
+      const formData = new FormData();
+      formData.append('name', data.name);
+      formData.append('email', data.email);
+      formData.append('subject', data.subject);
+      formData.append('message', data.message);
+
       const response = await fetch('https://formspree.io/f/mqalnvoe', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: data.name,
-          email: data.email,
-          subject: data.subject,
-          message: data.message,
-        }),
+        body: formData,
       });
 
       if (!response.ok) {
