@@ -110,10 +110,9 @@ const Contact = () => {
             {/* Call to Action */}
             <Card className="p-8 card-gradient border-border/50 text-center flex flex-col justify-center">
               <div className="mb-6">
-                <MapPin className="w-8 h-8 text-primary mx-auto mb-4" />
-                <h3 className="text-2xl font-bold font-inter mb-2">Based in Bangalore, India</h3>
+                <h3 className="text-2xl font-bold font-inter mb-2">Let's Work Together</h3>
                 <p className="text-muted-foreground">
-                  Available for internships, freelance projects, and full-time opportunities
+                  Ready to bring your ideas to life with cutting-edge technology
                 </p>
               </div>
               
@@ -124,16 +123,7 @@ const Contact = () => {
                   onClick={() => window.open('mailto:mmdnayeem4705@gmail.com')}
                 >
                   <Mail className="w-5 h-5 mr-2" />
-                  Email Me Directly
-                </Button>
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="border-primary/50 hover:bg-primary/10"
-                  onClick={() => window.open('/resume.pdf', '_blank')}
-                >
-                  <Download className="w-5 h-5 mr-2" />
-                  Download Resume
+                  Get In Touch
                 </Button>
               </div>
             </Card>

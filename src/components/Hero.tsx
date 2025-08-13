@@ -16,9 +16,13 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 py-20">
         <div className="max-w-4xl mx-auto text-center animate-slide-up">
-          {/* Profile Image Placeholder */}
-          <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-4xl font-bold text-primary-foreground animate-float">
-            MN
+          {/* Profile Image */}
+          <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden bg-gradient-to-br from-primary to-accent p-1 animate-float">
+            <img 
+              src="/lovable-uploads/3cc7a1ad-54ea-4580-9169-d6b3d3d237a8.png" 
+              alt="Mulla Mohammed Nayeem - Profile Picture" 
+              className="w-full h-full object-cover rounded-full"
+            />
           </div>
           
           {/* Name and Title */}
