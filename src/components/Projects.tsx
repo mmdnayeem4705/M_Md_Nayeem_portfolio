@@ -6,6 +6,13 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
 const projects = [
     {
+      title: "Meeyan-Ai-Agent",
+      description: "An AI-powered Twitter automation agent that posts motivational content every 6 hours and engages with the community in real-time. Built with n8n workflows, it generates human-like tweets and replies using OpenAI GPT, while automatically liking, retweeting, and responding to motivational content.",
+      technologies: ["n8n", "OpenAI GPT", "Twitter API", "Automation", "AI/ML"],
+      githubUrl: "https://github.com/mmdnayeem4705/Meeyan-Ai-Agent",
+      category: "AI Automation Bot"
+    },
+    {
       title: "Job Application Portal",
       description: "A full-stack web platform with role-based access for Students, HRs, and Admins to manage job applications seamlessly. Includes secure authentication, job posting, applicant tracking, and RESTful API integration with MySQL backend.",
       technologies: ["React.js", "Node.js", "MySQL", "REST API", "Authentication"],
