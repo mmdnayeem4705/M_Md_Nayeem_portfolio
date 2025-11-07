@@ -9,7 +9,7 @@ const projects = [
       title: "Job Application Portal",
       description: "Developed a full-stack career portal with role-based access for job seekers featuring secure JWT authentication, job and internship postings, and applicant tracking. Built a robust Spring Boot backend with RESTful APIs integrated into a React frontend and MySQL database for seamless data management and secure operations.",
       technologies: ["React.js", "Spring Boot", "MySQL", "JWT", "REST API"],
-      liveUrl: "https://jobapplication.magicloops.app/",
+      liveUrl: "https://lovable.dev/projects/b7c14060-72ad-49ff-8c8d-ccde92c1241f",
       githubUrl: "https://github.com/mmdnayeem4705/Job-apply-portal",
       category: "Full Stack Web App"
     },
@@ -17,7 +17,7 @@ const projects = [
       title: "Doctor Appointment Booking",
       description: "Developed and deployed a secure Web3-based doctor appointment app where patients submit medical forms and book appointments using ETH via MetaMask. Patient data is stored on a local blockchain and accessible only to the assigned doctor, ensuring privacy and decentralization.",
       technologies: ["Web3", "Blockchain", "Ethereum", "MetaMask", "Smart Contracts"],
-      liveUrl: "https://dappmedica-iah44zaco-kings-projects-4bf43fd1.vercel.app/",
+      liveUrl: "https://v0-doctor-appointment-booking-gxidw59fo-mmdnayeem4705s-projects.vercel.app/",
       githubUrl: "https://github.com/mmdnayeem4705/Doctor-Appointment-Booking-using-blockchain",
       category: "Blockchain DApp"
     },

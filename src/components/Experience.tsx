@@ -18,10 +18,10 @@ const Experience = () => {
       type: "internship",
       title: "Industry-Ready Java Spring Developer",
       company: "Telusko",
-      duration: "Currently Pursuing",
-      description: "Currently pursuing this certification with hands-on Java, Spring Boot, and backend development projects, gaining practical experience in building robust APIs and enterprise applications.",
+      duration: "Completed",
+      description: "Completed certification with hands-on Java, Spring Boot, and backend development projects, gaining practical experience in building robust APIs and enterprise applications.",
       technologies: ["Java", "Spring Boot", "Backend Development", "REST APIs"],
-      certificateUrl: "https://drive.google.com/file/d/1ICtW5YoHiDZk9RjkWEgG6U-VuMPU6bA0/view?usp=drive_link",
+      certificateUrl: "https://drive.google.com/file/d/1w0YJWgct2ozV5-6V07blpptd8MVj1cQ3/view",
       icon: <Building className="w-5 h-5" />
     },
     {
