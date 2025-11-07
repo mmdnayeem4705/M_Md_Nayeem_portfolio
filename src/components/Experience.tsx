@@ -6,29 +6,32 @@ const Experience = () => {
   const experiences = [
     {
       type: "internship",
-      title: "Java Full Stack Internship",
-      company: "Infosys Spring Boot",
-      duration: "Completed",
-      description: "Completed a Full Stack Java Development 0.6 virtual internship at Infosys, gaining hands-on experience in building scalable web applications using Spring Boot, Java, MySQL, and frontend technologies like HTML, CSS, JavaScript, and React.js.",
-      technologies: ["Java", "Spring Boot", "MySQL", "React.js", "HTML", "CSS", "JavaScript"],
-      icon: <Building className="w-5 h-5" />
-    },
-    {
-      type: "internship",
-      title: "Industry Ready Java Spring Developer",
-      company: "Telusko",
-      duration: "Currently Pursuing",
-      description: "Currently doing this certification to gain knowledge and experience by doing projects on Back-End Java.",
-      technologies: ["Java", "Spring Framework", "Backend Development"],
-      icon: <Building className="w-5 h-5" />
-    },
-    {
-      type: "internship",
       title: "Data Analyst Intern",
       company: "Unified Mentor",
       duration: "Completed",
-      description: "Completed a Data Analyst internship at Unified Mentor, demonstrating proficiency in data cleaning, visualization, and insight extraction from real-world datasets using analytical tools.",
-      technologies: ["Data Analysis", "Data Visualization", "Statistical Analysis", "Analytical Tools"],
+      description: "Completed a data analytics internship involving data cleaning, visualization, and insight extraction from real-world datasets using tools such as Excel, SQL, and Python libraries and strengthening analytical.",
+      technologies: ["Excel", "SQL", "Python", "Data Visualization", "Data Analysis"],
+      certificateUrl: "https://drive.google.com/file/d/1wBV-X_MvZVeGWJzMEyLwRDGKMdM5Syvk/view?usp=drive_link",
+      icon: <Building className="w-5 h-5" />
+    },
+    {
+      type: "internship",
+      title: "Industry-Ready Java Spring Developer",
+      company: "Telusko",
+      duration: "Currently Pursuing",
+      description: "Currently pursuing this certification with hands-on Java, Spring Boot, and backend development projects, gaining practical experience in building robust APIs and enterprise applications.",
+      technologies: ["Java", "Spring Boot", "Backend Development", "REST APIs"],
+      certificateUrl: "https://drive.google.com/file/d/1ICtW5YoHiDZk9RjkWEgG6U-VuMPU6bA0/view?usp=drive_link",
+      icon: <Building className="w-5 h-5" />
+    },
+    {
+      type: "internship",
+      title: "Java Full Stack Intern",
+      company: "Black Buck",
+      duration: "Completed",
+      description: "Completed a virtual internship in full-stack development, working with Spring Boot, Java, MySQL, HTML, CSS, JavaScript, and React.js to build scalable web applications with end-to-end functionality.",
+      technologies: ["Java", "Spring Boot", "MySQL", "React.js", "HTML", "CSS", "JavaScript"],
+      certificateUrl: "https://drive.google.com/file/d/1-jm5j3cXJ5UljL6uO51JqVjD7UfVyXy1/view?usp=drive_link",
       icon: <Building className="w-5 h-5" />
     }
   ];
@@ -91,13 +94,23 @@ const Experience = () => {
                       <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
                         {exp.description}
                       </p>
-                      <div className="flex flex-wrap gap-2">
+                      <div className="flex flex-wrap gap-2 mb-3">
                         {exp.technologies.map((tech) => (
                           <Badge key={tech} variant="secondary" className="text-xs">
                             {tech}
                           </Badge>
                         ))}
                       </div>
+                      {exp.certificateUrl && (
+                        <a 
+                          href={exp.certificateUrl} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-sm text-primary hover:underline inline-flex items-center gap-1"
+                        >
+                          View Certificate →
+                        </a>
+                      )}
                     </div>
                   </div>
                 </Card>

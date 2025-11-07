@@ -6,29 +6,29 @@ const Achievements = () => {
   const achievements = [
     {
       title: "Competitive Programming Excellence",
-      description: "Achieved 5-star ratings in Python, C, and Java, and 4-star in C++ on competitive coding platforms.",
+      description: "Achieved 5-star ratings in Python, C, and Java on competitive Hacker Rank coding platforms.",
       icon: <Trophy className="w-6 h-6" />,
       color: "primary",
-      stats: "5⭐ Python, C, Java | 4⭐ C++"
+      stats: "5⭐ Python, C, Java"
     },
     {
       title: "Problem Solving Mastery",
-      description: "Solved over 250 problems across HackerRank and LeetCode, demonstrating strong algorithmic thinking and programming proficiency.",
+      description: "Solved over 250 problems across HackerRank and LeetCode, demonstrating strong problem-solving skills in programming languages.",
       icon: <Code className="w-6 h-6" />,
       color: "success",
       stats: "250+ Problems Solved"
     },
     {
-      title: "Multi-Language Proficiency",
-      description: "Demonstrated expertise across multiple programming languages with consistent high ratings and problem-solving capabilities.",
-      icon: <Target className="w-6 h-6" />,
+      title: "Smart India Hackathon",
+      description: "Selected among the Top 10 teams in the Internal Smart India Hackathon held at GITAM University.",
+      icon: <Award className="w-6 h-6" />,
       color: "accent",
-      stats: "4+ Programming Languages"
+      stats: "Top 10 Teams"
     },
     {
       title: "Platform Recognition",
       description: "Recognized on HackerRank and LeetCode for consistent performance and dedication to continuous learning.",
-      icon: <Award className="w-6 h-6" />,
+      icon: <Target className="w-6 h-6" />,
       color: "highlight",
       stats: "HackerRank & LeetCode"
     }
