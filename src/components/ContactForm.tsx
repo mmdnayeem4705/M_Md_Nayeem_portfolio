@@ -44,7 +44,7 @@ const ContactForm = () => {
       formData.append('subject', data.subject);
       formData.append('message', data.message);
 
-      const response = await fetch('https://formspree.io/f/mqalnvoe', {
+      const response = await fetch('https://formspree.io/f/mrbrzzrp', {
         method: 'POST',
         body: formData,
       });
