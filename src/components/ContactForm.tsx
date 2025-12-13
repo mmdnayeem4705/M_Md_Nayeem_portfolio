@@ -9,8 +9,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
 import { Send, Loader2 } from "lucide-react";
-import { supabase } from "@/integrations/supabase/client";
-
 
 const contactFormSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -39,12 +37,21 @@ const ContactForm = () => {
     setIsSubmitting(true);
     
     try {
-      const { error } = await supabase.functions.invoke('send-contact-email', {
-        body: data,
+      const response = await fetch("https://formspree.io/f/mrbrzzrp", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: data.name,
+          email: data.email,
+          subject: data.subject,
+          message: data.message,
+        }),
       });
 
-      if (error) {
-        throw error;
+      if (!response.ok) {
+        throw new Error("Failed to send message");
       }
 
       toast({
