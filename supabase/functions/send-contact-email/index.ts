@@ -63,7 +63,6 @@ const handler = async (req: Request): Promise<Response> => {
         ...corsHeaders,
       },
     });
-    });
   } catch (error: any) {
     console.error("Error in send-contact-email function:", error);
     return new Response(
